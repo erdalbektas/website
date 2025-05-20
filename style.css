@@ -1,0 +1,155 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-color: #111; /* Dark background */
+    color: #0F0; /* Green text, like old terminals */
+    line-height: 1.4;
+}
+
+#terminal-window {
+    width: 95%;
+    height: 90vh;
+    margin: 2.5vh auto; /* Centered with some margin */
+    border: 1px solid #0F0; /* Green border */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #000; /* Black background for the terminal itself */
+}
+
+#output {
+    flex-grow: 1; /* Takes up available space */
+    overflow-y: auto; /* Scroll for long output */
+    padding: 5px;
+    word-wrap: break-word; /* Break long words */
+    margin-bottom: 10px; /* Space between output and input line */
+}
+
+#output p {
+    margin: 0; /* Tightly packed output lines */
+    white-space: pre-wrap; /* Preserve whitespace and newlines in output */
+}
+
+#input-line {
+    display: flex;
+    align-items: center;
+}
+
+#input-line span {
+    margin-right: 5px; /* Space after prompt */
+}
+
+#command-input {
+    flex-grow: 1; /* Takes up remaining width */
+    background-color: transparent;
+    border: none;
+    color: #0F0; /* Green text */
+    font-family: monospace;
+    outline: none; /* No focus border */
+    padding: 5px 0; /* Minimal padding */
+    font-size: 1em; /* Match surrounding text size */
+}
+
+/* Comment out or remove old styles */
+/*
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 2rem 0;
+    border-bottom: 1px #ccc dotted;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#features ul {
+    list-style: none;
+    text-align: center;
+}
+
+#features ul li {
+    margin-bottom: 0.5rem;
+    background: #e7e7e7;
+    padding: 0.5rem;
+}
+
+
+#cta {
+    text-align: center;
+}
+
+#cta p {
+    margin-bottom: 1rem;
+}
+
+#cta a {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#cta a:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    margin-top: 1rem;
+}
+*/
